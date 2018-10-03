@@ -23,7 +23,7 @@ module.exports = function(filepath) {
         image.clone().resize(targetSize, targetSize, Jimp.RESIZE_BICUBIC)
       );
 
-      return Promise.all(resizedImages);
+      return Promise.all(resizedImages.concat(image));
     })
     .then(imagesToIco);
 };
