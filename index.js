@@ -1,9 +1,9 @@
 /* eslint-disable no-mixed-operators */
 const Jimp = require("jimp");
 
-// http://fileformats.wikia.com/wiki/Icon
-// the correct sizes are 256x256, 48x48, 32x32, 16x16
-const sizeList = [48, 32, 16];
+// https://github.com/zeit/pkg/issues/321#issuecomment-408297777
+// sizes for pkg
+const sizeList = [16, 32, 48, 64, 128];
 const err = new Error("Please give me an png image of 256x256 pixels.");
 err.code = "ESIZE";
 
